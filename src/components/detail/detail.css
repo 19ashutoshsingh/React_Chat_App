@@ -1,0 +1,126 @@
+.detail{
+    flex: 1;
+
+    .user{
+        padding: 30px 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #dddddd35;
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    .info{
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .options{
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgba(17, 25, 40, 0.3);
+                    padding: 8px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetails{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span{
+                            font-size: 14px;
+                            color: lightgray;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        background-color: rgba(17, 25, 40, 0.3);
+                        padding: 8px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: rgba(230, 74, 105, 0.33);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(220, 20, 60, 0.796);
+            }
+
+            &.logout{
+                padding: 10px;
+                background-color: #1a73e8;
+            }
+
+            &.clear{
+                padding: 10px;
+                background-color: #1a73e8;
+            }
+        }
+    }
+}
+
+/* .photos .photoItem .photoDetails img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.options .title img{
+    width: 14px;
+    height: 14px;
+    
+} */
